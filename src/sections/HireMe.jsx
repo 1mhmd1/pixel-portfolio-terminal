@@ -5,28 +5,28 @@ const HireMe = () => {
   const reasons = [
     {
       icon: <Lightbulb className="text-primary" size={24} />,
-      title: 'Quick Learner',
-      description: 'I adapt quickly to new technologies and frameworks, always staying current with industry trends.',
+      title: 'Full Stack Experience',
+      description: 'Proven internship experience at Octa Solution building complete web applications with React, Laravel, and modern technologies.',
     },
     {
       icon: <Code className="text-primary" size={24} />,
-      title: 'Clean Code Advocate',
-      description: 'I write maintainable, well-documented code following best practices and coding standards.',
+      title: 'AI Integration Skills',
+      description: 'Experience building AI-driven systems with RAG, NLQ interfaces, and forecasting models using LangChain/LlamaIndex.',
     },
     {
       icon: <MessageSquare className="text-primary" size={24} />,
-      title: 'Strong Communicator',
-      description: 'Clear communication and collaboration skills ensure smooth teamwork and project delivery.',
+      title: 'Strong Team Player',
+      description: 'Successfully collaborated on multiple team projects including a senior capstone and internship delivery application.',
     },
     {
       icon: <Shield className="text-primary" size={24} />,
-      title: 'Reliable & Committed',
-      description: 'I take ownership of my work and deliver on time with attention to quality and detail.',
+      title: 'Solid CS Foundation',
+      description: 'B.S. in Computer Science with strong background in algorithms, data structures, and software development principles.',
     },
     {
       icon: <Zap className="text-primary" size={24} />,
-      title: 'Problem Solver',
-      description: 'I enjoy tackling complex challenges and finding efficient, elegant solutions.',
+      title: 'Quick Learner',
+      description: 'Rapidly mastered React, Tailwind, Laravel, and Django during internship. Always eager to learn new technologies.',
     },
   ];
 

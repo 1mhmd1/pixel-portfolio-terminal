@@ -2,18 +2,22 @@ import React from 'react';
 
 const Technologies = () => {
   const technologies = [
+    { name: 'Java', icon: '☕' },
+    { name: 'Python', icon: '🐍' },
+    { name: 'C++', icon: '⚙️' },
+    { name: 'JavaScript', icon: '⚡' },
     { name: 'HTML5', icon: '📄' },
     { name: 'CSS3', icon: '🎨' },
-    { name: 'JavaScript', icon: '⚡' },
-    { name: 'TypeScript', icon: '📘' },
     { name: 'React', icon: '⚛️' },
     { name: 'Tailwind CSS', icon: '💨' },
-    { name: 'Bootstrap', icon: '🅱️' },
+    { name: 'Django', icon: '🎸' },
+    { name: 'Laravel', icon: '🔺' },
+    { name: 'PostgreSQL', icon: '🐘' },
+    { name: 'MySQL', icon: '🗄️' },
     { name: 'Git', icon: '📦' },
     { name: 'GitHub', icon: '🐙' },
     { name: 'VS Code', icon: '💻' },
-    { name: 'npm', icon: '📥' },
-    { name: 'Vite', icon: '⚡' },
+    { name: 'Postman', icon: '📮' },
   ];
 
   return (
@@ -43,7 +47,7 @@ const Technologies = () => {
           </div>
           
           <div className="mt-6 font-terminal text-muted-foreground">
-            <span className="text-primary">&gt;</span> 12 items listed
+            <span className="text-primary">&gt;</span> 16 items listed
             <span className="cursor-blink text-primary ml-1">_</span>
           </div>
         </div>
