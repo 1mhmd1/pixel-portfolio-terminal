@@ -15,23 +15,23 @@ const About = () => {
           
           <div className="pl-4 border-l-2 border-primary space-y-4">
             <p className="font-terminal text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate Frontend Developer with a strong foundation in building 
-              responsive and user-friendly web applications. My journey in web development 
-              started with curiosity about how websites work, and it has evolved into a 
-              deep commitment to creating clean, efficient code.
+              I'm a motivated Computer Science student at Beirut Arab University (B.S. in CS, GPA: 3.1/4, graduating May 2025) 
+              with a strong foundation in programming, algorithms, and software development.
             </p>
             
             <p className="font-terminal text-lg text-muted-foreground leading-relaxed">
-              Currently focused on mastering React and modern JavaScript frameworks, 
-              I enjoy the challenge of turning complex problems into simple, elegant 
-              solutions. I believe in writing maintainable code and following best 
-              practices that make collaboration seamless.
+              Experienced in team projects and building real-world applications using Python, Java, 
+              and modern web technologies. I completed a 4-month Full Stack Web Development internship 
+              at Octa Solution where I built responsive projects and collaborated on a Delivery Web Application.
             </p>
             
             <p className="font-terminal text-lg text-muted-foreground leading-relaxed">
-              My goal is to become a well-rounded developer who can contribute to 
-              meaningful projects while continuously learning and growing in this 
-              ever-evolving field.
+              Passionate about solving complex problems and continuously learning new technologies. 
+              Eager to contribute technical and analytical skills in a dynamic, growth-focused environment.
+            </p>
+            
+            <p className="font-terminal text-lg text-muted-foreground leading-relaxed">
+              <span className="text-accent">Languages:</span> Arabic (native), English (fluent)
             </p>
           </div>
           

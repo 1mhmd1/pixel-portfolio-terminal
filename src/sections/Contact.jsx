@@ -26,17 +26,17 @@ const Contact = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/1mhmd1',
       icon: <Github size={24} />,
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/in/mohammad-salim-33ab82361',
       icon: <Linkedin size={24} />,
     },
     {
       name: 'Email',
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:Mohammad.salim.2003@gmail.com',
       icon: <Mail size={24} />,
     },
   ];

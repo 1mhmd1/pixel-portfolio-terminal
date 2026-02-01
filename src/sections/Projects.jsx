@@ -4,24 +4,24 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   const projects = [
     {
-      name: 'Project One',
-      description: 'A responsive web application built with React and Tailwind CSS. Features include user authentication, dynamic content loading, and modern UI design.',
-      technologies: ['React', 'Tailwind CSS', 'JavaScript'],
-      githubLink: 'https://github.com',
-      demoLink: 'https://example.com',
+      name: 'IntelligentWarehouseOS',
+      description: 'AI-driven management system unifying warehouse inventory, multi-branch operations, and core business functions. Features RAG-based Intelligence Agent, SQL-to-Text NLQ Interface, and Forecasting & Demand Planning Model.',
+      technologies: ['Python', 'Django', 'PostgreSQL', 'LangChain', 'JavaScript', 'AJAX'],
+      githubLink: 'https://github.com/1mhmd1',
+      demoLink: null,
     },
     {
-      name: 'Project Two',
-      description: 'An interactive dashboard for data visualization using charts and graphs. Implements real-time updates and responsive layouts.',
-      technologies: ['React', 'Chart.js', 'CSS Modules'],
-      githubLink: 'https://github.com',
-      demoLink: 'https://example.com',
+      name: 'AgriConnect',
+      description: 'Senior Project: A platform connecting farmers with landowners, featuring an agricultural products store and AI risk alert system for farm management.',
+      technologies: ['React', 'Tailwind CSS', 'Python', 'AI/ML'],
+      githubLink: 'https://github.com/1mhmd1',
+      demoLink: null,
     },
     {
-      name: 'Project Three',
-      description: 'A portfolio website template with terminal-inspired design. Features smooth animations, dark theme, and pixel-perfect styling.',
-      technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-      githubLink: 'https://github.com',
+      name: 'Delivery Web Application',
+      description: 'Collaborative team project built during Octa Solution internship. Full-stack delivery platform with responsive UI and RESTful backend.',
+      technologies: ['React', 'Tailwind CSS', 'Laravel', 'MySQL'],
+      githubLink: 'https://github.com/1mhmd1',
       demoLink: null,
     },
   ];

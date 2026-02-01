@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = "Frontend Developer";
+  const fullText = "Full Stack Developer";
   
   useEffect(() => {
     let index = 0;
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
         
         <h1 className="font-pixel text-2xl md:text-4xl text-primary text-glow-strong mb-6 leading-relaxed">
-          Hi, I'm Your Name
+          Hi, I'm Mohammad Salim
         </h1>
         
         <div className="font-pixel text-lg md:text-xl text-accent mb-8">
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
         
         <p className="font-terminal text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          <span className="text-primary">&gt;</span> Passionate about building clean, responsive web applications with modern technologies.
+          <span className="text-primary">&gt;</span> CS Student passionate about solving complex problems and building real-world applications using Python, Java, and web technologies.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
