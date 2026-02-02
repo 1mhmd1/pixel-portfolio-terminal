@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap");
 
-/* Custom CSS Variables for colors, shadows, fonts */
 :root {
   --color-background: hsl(120 10% 5%);
   --color-foreground: hsl(120 100% 50%);
@@ -45,7 +43,6 @@
   --animate-blink: blink 1s infinite;
 }
 
-/* Keyframe animations */
 @keyframes blink {
   0%,
   50% {
@@ -57,7 +54,6 @@
   }
 }
 
-/* Apply CSS variables */
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
