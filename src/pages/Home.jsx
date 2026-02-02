@@ -11,7 +11,7 @@ import Contact from '../sections/Contact';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-background scanlines">
+    <div className="min-h-screen bg-background relative before:content-[''] before:fixed before:inset-0 before:pointer-events-none before:bg-[repeating-linear-gradient(0deg,rgba(0,0,0,0.15),rgba(0,0,0,0.15)_1px,transparent_1px,transparent_2px)] before:z-[1000]">
       <Header />
       <main className="pt-16">
         <Hero />

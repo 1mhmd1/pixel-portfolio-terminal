@@ -4,11 +4,11 @@ const About = () => {
   return (
     <section id="about" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="font-pixel text-xl md:text-2xl text-primary text-glow mb-12">
+        <h2 className="font-pixel text-xl md:text-2xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)] mb-12">
           <span className="text-muted-foreground">&gt;</span> about_me
         </h2>
         
-        <div className="terminal-card space-y-6">
+        <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)] space-y-6">
           <div className="font-terminal text-xl leading-relaxed">
             <span className="text-primary">$</span> cat about.txt
           </div>
@@ -36,7 +36,7 @@ const About = () => {
           </div>
           
           <div className="font-terminal text-primary">
-            <span className="cursor-blink">_</span>
+            <span className="animate-[blink_1s_infinite]">_</span>
           </div>
         </div>
       </div>

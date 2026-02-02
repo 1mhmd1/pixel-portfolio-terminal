@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="font-pixel text-xl md:text-2xl text-primary text-glow mb-12">
+        <h2 className="font-pixel text-xl md:text-2xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)] mb-12">
           <span className="text-muted-foreground">&gt;</span> projects
         </h2>
         
@@ -45,7 +45,7 @@ const Projects = () => {
         
         <div className="mt-8 font-terminal text-muted-foreground text-center">
           <span className="text-primary">&gt;</span> More projects coming soon...
-          <span className="cursor-blink text-primary ml-1">_</span>
+          <span className="text-primary ml-1 animate-[blink_1s_infinite]">_</span>
         </div>
       </div>
     </section>

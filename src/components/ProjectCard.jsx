@@ -3,9 +3,9 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const ProjectCard = ({ name, description, technologies, githubLink, demoLink }) => {
   return (
-    <div className="terminal-card border border-border p-6 hover:border-primary transition-colors group">
+    <div className="border border-border bg-card p-6 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)] hover:border-primary transition-colors group">
       <div className="flex items-start justify-between mb-4">
-        <h3 className="font-pixel text-xs text-primary text-glow group-hover:text-glow-strong transition-all">
+        <h3 className="font-pixel text-xs text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)] group-hover:drop-shadow-[0_0_10px_hsl(120_100%_50%/0.8)] transition-all">
           {name}
         </h3>
         <div className="flex gap-3">
