@@ -34,6 +34,8 @@ const Header = () => {
           </ul>
           <a
             href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-primary hover:drop-shadow-[0_0_10px_hsl(120_100%_50%/0.8)] transition-all"
           >
             <Github size={24} />
