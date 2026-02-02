@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { Github, Linkedin, Mail, Send } from 'lucide-react';
+import React, { useState } from "react";
+import { Github, Linkedin, Mail, Send } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -17,25 +17,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Message sent! (Frontend demo - no actual email sent)');
-    setFormData({ name: '', email: '', message: '' });
+    console.log("Form submitted:", formData);
+    alert("Message sent! (Frontend demo - no actual email sent)");
+    setFormData({ name: "", email: "", message: "" });
   };
 
   const socialLinks = [
     {
-      name: 'GitHub',
-      url: 'https://github.com/1mhmd1',
+      name: "GitHub",
+      url: "https://github.com/1mhmd1",
       icon: <Github size={24} />,
     },
     {
-      name: 'LinkedIn',
-      url: 'https://linkedin.com/in/mohammad-salim-33ab82361',
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/mohammad-salim-33ab82361",
       icon: <Linkedin size={24} />,
     },
     {
-      name: 'Email',
-      url: 'mailto:Mohammad.salim.2003@gmail.com',
+      name: "Email",
+      url: "mailto:Mohammad.salim.2003@gmail.com",
       icon: <Mail size={24} />,
     },
   ];
@@ -46,14 +46,14 @@ const Contact = () => {
         <h2 className="font-pixel text-xl md:text-2xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)] mb-12">
           <span className="text-muted-foreground">&gt;</span> contact
         </h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Form */}
           <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)]">
             <div className="font-terminal text-xl mb-6">
               <span className="text-primary">$</span> ./send-message.sh
             </div>
-            
+
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="font-terminal text-muted-foreground block mb-2">
@@ -69,7 +69,7 @@ const Contact = () => {
                   placeholder="Enter your name..."
                 />
               </div>
-              
+
               <div>
                 <label className="font-terminal text-muted-foreground block mb-2">
                   <span className="text-primary">&gt;</span> email:
@@ -84,7 +84,7 @@ const Contact = () => {
                   placeholder="Enter your email..."
                 />
               </div>
-              
+
               <div>
                 <label className="font-terminal text-muted-foreground block mb-2">
                   <span className="text-primary">&gt;</span> message:
@@ -99,23 +99,22 @@ const Contact = () => {
                   placeholder="Enter your message..."
                 />
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full font-terminal text-lg py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center gap-2"
               >
-                <Send size={18} />
-                [ Send Message ]
+                <Send size={18} />[ Send Message ]
               </button>
             </form>
           </div>
-          
-          {/* Social Links */}
+
+          {}
           <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)]">
             <div className="font-terminal text-xl mb-6">
               <span className="text-primary">$</span> cat social-links.txt
             </div>
-            
+
             <div className="space-y-4">
               {socialLinks.map((link, index) => (
                 <a
@@ -137,10 +136,11 @@ const Contact = () => {
                 </a>
               ))}
             </div>
-            
+
             <div className="mt-8 p-4 border border-border">
               <div className="font-terminal text-muted-foreground">
-                <span className="text-primary">&gt;</span> Looking forward to connecting!
+                <span className="text-primary">&gt;</span> Looking forward to
+                connecting!
               </div>
               <div className="font-terminal text-primary mt-2">
                 <span className="animate-[blink_1s_infinite]">_</span>

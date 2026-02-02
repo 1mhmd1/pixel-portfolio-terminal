@@ -1,58 +1,63 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Tailwind v4 Theme Configuration */
-@theme {
-  /* Terminal green color palette - HSL values */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap");
+
+/* Custom CSS Variables for colors, shadows, fonts */
+:root {
   --color-background: hsl(120 10% 5%);
   --color-foreground: hsl(120 100% 50%);
-  
+
   --color-card: hsl(120 10% 8%);
   --color-card-foreground: hsl(120 100% 50%);
-  
+
   --color-primary: hsl(120 100% 50%);
   --color-primary-foreground: hsl(120 10% 5%);
-  
+
   --color-secondary: hsl(120 50% 15%);
   --color-secondary-foreground: hsl(120 100% 50%);
-  
+
   --color-muted: hsl(120 20% 12%);
   --color-muted-foreground: hsl(120 60% 40%);
-  
+
   --color-accent: hsl(120 100% 35%);
   --color-accent-foreground: hsl(120 10% 5%);
-  
+
   --color-destructive: hsl(0 84.2% 60.2%);
   --color-destructive-foreground: hsl(210 40% 98%);
-  
+
   --color-border: hsl(120 50% 20%);
   --color-input: hsl(120 50% 20%);
   --color-ring: hsl(120 100% 50%);
-  
-  /* Custom fonts */
-  --font-terminal: 'VT323', monospace;
-  --font-pixel: 'Press Start 2P', cursive;
-  
-  /* Custom shadows for glow effects */
-  --shadow-glow: 0 0 10px hsl(120 100% 50% / 0.5), 0 0 20px hsl(120 100% 50% / 0.3);
-  --shadow-glow-strong: 0 0 10px hsl(120 100% 50% / 0.8), 0 0 30px hsl(120 100% 50% / 0.5), 0 0 50px hsl(120 100% 50% / 0.3);
+
+  --font-terminal: "VT323", monospace;
+  --font-pixel: "Press Start 2P", cursive;
+
+  --shadow-glow:
+    0 0 10px hsl(120 100% 50% / 0.5), 0 0 20px hsl(120 100% 50% / 0.3);
+  --shadow-glow-strong:
+    0 0 10px hsl(120 100% 50% / 0.8), 0 0 30px hsl(120 100% 50% / 0.5),
+    0 0 50px hsl(120 100% 50% / 0.3);
   --shadow-card-inset: inset 0 0 30px hsl(120 100% 50% / 0.05);
-  
-  /* Animation timing */
+
   --animate-blink: blink 1s infinite;
 }
 
 /* Keyframe animations */
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
-/* Base styles */
-* {
-  border-color: var(--color-border);
-}
-
+/* Apply CSS variables */
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
@@ -60,6 +65,15 @@ body {
   font-size: 1.25rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-pixel);
+}
+
+* {
+  border-color: var(--color-border);
 }
