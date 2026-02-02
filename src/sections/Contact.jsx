@@ -17,7 +17,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Frontend only - could integrate with email service
     console.log('Form submitted:', formData);
     alert('Message sent! (Frontend demo - no actual email sent)');
     setFormData({ name: '', email: '', message: '' });
@@ -44,13 +43,13 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="font-pixel text-xl md:text-2xl text-primary text-glow mb-12">
+        <h2 className="font-pixel text-xl md:text-2xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)] mb-12">
           <span className="text-muted-foreground">&gt;</span> contact
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Form */}
-          <div className="terminal-card">
+          <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)]">
             <div className="font-terminal text-xl mb-6">
               <span className="text-primary">$</span> ./send-message.sh
             </div>
@@ -112,7 +111,7 @@ const Contact = () => {
           </div>
           
           {/* Social Links */}
-          <div className="terminal-card">
+          <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)]">
             <div className="font-terminal text-xl mb-6">
               <span className="text-primary">$</span> cat social-links.txt
             </div>
@@ -144,7 +143,7 @@ const Contact = () => {
                 <span className="text-primary">&gt;</span> Looking forward to connecting!
               </div>
               <div className="font-terminal text-primary mt-2">
-                <span className="cursor-blink">_</span>
+                <span className="animate-[blink_1s_infinite]">_</span>
               </div>
             </div>
           </div>

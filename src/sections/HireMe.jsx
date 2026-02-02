@@ -33,11 +33,11 @@ const HireMe = () => {
   return (
     <section id="hire-me" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <h2 className="font-pixel text-xl md:text-2xl text-primary text-glow mb-12">
+        <h2 className="font-pixel text-xl md:text-2xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)] mb-12">
           <span className="text-muted-foreground">&gt;</span> why_hire_me
         </h2>
         
-        <div className="terminal-card">
+        <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)]">
           <div className="font-terminal text-xl mb-6">
             <span className="text-primary">$</span> ./show-value-proposition.sh
           </div>
@@ -65,7 +65,7 @@ const HireMe = () => {
           
           <div className="mt-8 font-terminal text-primary text-center">
             <span className="text-muted-foreground">&gt;</span> Ready to contribute to your team!
-            <span className="cursor-blink ml-1">_</span>
+            <span className="ml-1 animate-[blink_1s_infinite]">_</span>
           </div>
         </div>
       </div>

@@ -33,12 +33,12 @@ const Hero = () => {
           <span className="text-primary">&gt;</span> initializing...
         </div>
         
-        <h1 className="font-pixel text-2xl md:text-4xl text-primary text-glow-strong mb-6 leading-relaxed">
+        <h1 className="font-pixel text-2xl md:text-4xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.8)] mb-6 leading-relaxed">
           Hi, I'm Mohammad Salim
         </h1>
         
         <div className="font-pixel text-lg md:text-xl text-accent mb-8">
-          {displayText}<span className="cursor-blink text-primary">_</span>
+          {displayText}<span className="text-primary animate-[blink_1s_infinite]">_</span>
         </div>
         
         <p className="font-terminal text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
@@ -48,7 +48,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={scrollToProjects}
-            className="font-terminal text-lg px-8 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:text-glow"
+            className="font-terminal text-lg px-8 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all hover:drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)]"
           >
             [ View Projects ]
           </button>
@@ -62,7 +62,7 @@ const Hero = () => {
       </div>
       
       <div className="absolute bottom-10 animate-bounce">
-        <ChevronDown className="text-primary text-glow" size={32} />
+        <ChevronDown className="text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)]" size={32} />
       </div>
     </section>
   );
