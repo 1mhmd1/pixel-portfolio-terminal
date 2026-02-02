@@ -8,13 +8,6 @@ const Contact = () => {
     message: "",
   });
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
@@ -48,7 +41,7 @@ const Contact = () => {
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Contact Form */}
+          {}
           <div className="border border-border bg-card p-4 shadow-[inset_0_0_30px_hsl(120_100%_50%/0.05)]">
             <div className="font-terminal text-xl mb-6">
               <span className="text-primary">$</span> ./send-message.sh

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { ChevronDown } from "lucide-react";
 
 const Hero = () => {
-  const [displayText, setDisplayText] = useState('');
+  const [displayText, setDisplayText] = useState("");
   const fullText = "Full Stack Developer";
-  
+
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -19,11 +19,11 @@ const Hero = () => {
   }, []);
 
   const scrollToProjects = () => {
-    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
   };
 
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -32,19 +32,22 @@ const Hero = () => {
         <div className="font-terminal text-xl text-muted-foreground mb-4">
           <span className="text-primary">&gt;</span> initializing...
         </div>
-        
+
         <h1 className="font-pixel text-2xl md:text-4xl text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.8)] mb-6 leading-relaxed">
           Hi, I'm Mohammad Salim
         </h1>
-        
+
         <div className="font-pixel text-lg md:text-xl text-accent mb-8">
-          {displayText}<span className="text-primary animate-[blink_1s_infinite]">_</span>
+          {displayText}
+          <span className="text-primary animate-[blink_1s_infinite]">_</span>
         </div>
-        
+
         <p className="font-terminal text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-          <span className="text-primary">&gt;</span> CS Student passionate about solving complex problems and building real-world applications using Python, Java, and web technologies.
+          <span className="text-primary">&gt;</span> CS Student passionate about
+          solving complex problems and building real-world applications using
+          Python, Java, and web technologies.
         </p>
-        
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={scrollToProjects}
@@ -60,9 +63,12 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      
+
       <div className="absolute bottom-10 animate-bounce">
-        <ChevronDown className="text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)]" size={32} />
+        <ChevronDown
+          className="text-primary drop-shadow-[0_0_10px_hsl(120_100%_50%/0.5)]"
+          size={32}
+        />
       </div>
     </section>
   );

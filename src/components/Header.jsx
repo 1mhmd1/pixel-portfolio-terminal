@@ -1,9 +1,9 @@
-import React from 'react';
-import { Github } from 'lucide-react';
+import React from "react";
+import { Github } from "lucide-react";
 
 const Header = () => {
   const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -14,7 +14,14 @@ const Header = () => {
             &gt;_portfolio
           </div>
           <ul className="hidden md:flex items-center gap-6 font-terminal text-lg">
-            {['about', 'technologies', 'skills', 'projects', 'hire-me', 'contact'].map((item) => (
+            {[
+              "about",
+              "technologies",
+              "skills",
+              "projects",
+              "hire-me",
+              "contact",
+            ].map((item) => (
               <li key={item}>
                 <button
                   onClick={() => scrollToSection(item)}
@@ -27,8 +34,6 @@ const Header = () => {
           </ul>
           <a
             href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-primary hover:drop-shadow-[0_0_10px_hsl(120_100%_50%/0.8)] transition-all"
           >
             <Github size={24} />
